@@ -1,0 +1,357 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=26mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\hypersetup{pdftitle={Sharp positive-equilibrium counts in quadratic mass-action networks with two more reactions than species},pdfauthor={Anonymous},pdfsubject={Publication candidate: quadratic mass-action sharpness}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newcommand{\R}{\mathbb R}
+\newcommand{\zero}{\varnothing}
+\title{Sharp positive-equilibrium counts in quadratic mass-action networks with two more reactions than species}
+\author{Anonymous}
+\date{4 October 2026\quad---\quad Publication candidate, version 2\\[3pt]
+\small Reserved archive DOI: \href{https://doi.org/10.5281/zenodo.23146115}{10.5281/zenodo.23146115}\\
+\small Candidate release: \texttt{v1.0.0-candidate}}
+\begin{document}
+\maketitle
+\begin{abstract}
+We realize the extremal polynomial chain of Phillipson and Rojas as a quadratic mass-action network with $n$ species, $n+2$ reactions, stoichiometric rank $n$, and exactly $n+1$ positive nondegenerate equilibria, for every integer $n\geq2$. Explicit integer products and rational rate constants attain the bound whose sharpness for $n\geq3$ was left open by Banaji and Feliu. We also give a self-contained root-count proof for a rational parameter choice. Two five-reaction examples on three species provide a reciprocal-quartic family and an inflow-free family with product molecularity at most ten. The latter has an exact four-equilibrium rate interval; a specified reciprocal example has two locally asymptotically stable equilibria and two saddles. The proofs are analytic, with exact-arithmetic corroboration.
+\end{abstract}
+
+\section{The question and conventions}
+A reaction $a\to b$ has source and product vectors $a,b\in\mathbb Z_{\geq0}^n$, $a\ne b$, and contributes $k(b-a)x^a$ to the mass-action vector field, where $k>0$ and $x^a=\prod_i x_i^{a_i}$. A network is quadratic when every source has molecularity at most two. Products need not be bimolecular. An $(n,m,r)$ network has $n$ species, $m$ reactions and stoichiometric rank $r$, the rank of its reaction-vector matrix $\Gamma$. At full rank, an equilibrium is nondegenerate exactly when its ordinary Jacobian is nonsingular.
+
+Write $A$ for the matrix whose rows are the source vectors. Its source rank is $\operatorname{rank}[A\mid\mathbf1]-1$, the dimension of their affine hull. Source deficiency means that this dimension is less than $r$. Dynamic nontriviality means $\ker\Gamma\cap\R_{>0}^m\ne\varnothing$. Banaji--Feliu's Theorem~5.5 applies to a dynamically nontrivial quadratic $(n,n+k,n)$ network, $k\geq2$, having exactly $n+2$ distinct sources and no source deficiency; it bounds the number of positive nondegenerate equilibria by $n+1$ \cite{BF}. Here $k=2$. We verify every hypothesis directly in Proposition~\ref{prop:PR} and Section~\ref{sec:flux}; the three-species source ranks are also checked in Section~\ref{sec:supports}.
+
+Remark~5.8 of \cite{BF} asks whether quadratic $(n,n+2,n)$ networks attain that bound for $n\geq3$, beginning with three species and five reactions. We resolve this attainment question. The required equilibria need not all be stable.
+
+Reduction of circuit-supported polynomial systems to a scalar equation and sharp positive-root results are established methods \cite{Bihan,EH,BDF}. Phillipson and Rojas already construct the quadratic chain with $n+1$ nondegenerate positive roots \cite[Theorem 1.6]{PR}. Proposition~\ref{prop:PR}, presented first, gives its direct chemical realization. Theorem~\ref{thm:main} then supplies a self-contained proof for a scaled member of the same parametric family. The contribution is the admissible realization with integer products and its consequence for the mass-action sharpness question, not a new abstract fewnomial family. The planar case was already attained by a chemical example in \cite[Remark 38]{BBH}. The accompanying bounded prior-art audit does not establish historical priority exhaustively.
+
+\section{Direct realization of the Phillipson--Rojas family}\label{sec:PR}
+The following realization is the organizing contribution. It transfers a known extremal polynomial family into the specified reaction-count class.
+\begin{proposition}[Chemical realization of the Phillipson--Rojas chain]\label{prop:PR}
+For every $n\geq2$, put $b_i=15\cdot16^{n-i-1}$ for $i<n$ and $b_n=1$. The network
+\[
+\begin{aligned}
+&\zero\longrightarrow\sum_i b_iX_i,\qquad X_1\longrightarrow\zero,\\
+&X_i+X_{i+1}\longrightarrow2X_i\ (1\leq i<n),\qquad
+2X_n\longrightarrow3X_n
+\end{aligned}
+\]
+has exactly $n+1$ positive nondegenerate equilibria with these rates: inflow $1/4$; outflow $4^{2n-3}$; transfer $i$ at rate $4^{2n-2i-3}$ for $1\leq i\leq n-2$; last transfer at rate $1$; and terminal autocatalysis at rate $1$. It is a quadratic $(n,n+2,n)$ network satisfying all the hypotheses of Banaji--Feliu's Theorem~5.5. The interior-transfer range is empty when $n=2$.
+\end{proposition}
+\begin{proof}
+All product coefficients are nonnegative integers and all rates are positive rationals. The $n+2$ sources are distinct and quadratic. The outflow and transfer vectors $-e_1,e_1-e_2,\ldots,e_{n-1}-e_n$ span $\R^n$. The sources $0,e_1,e_1+e_2,\ldots,e_{n-1}+e_n$ are affinely independent, so the source rank is $n$.
+
+To verify the translation, reverse the coordinates in the polynomial system of \cite[Theorem 1.6]{PR} and choose its parameter $\varepsilon=1/4$. In the reversed variables $y_1,\ldots,y_n$, define
+\[
+d_i=4^{2n-2i-1}\ (i<n),\qquad d_n=1/4,
+\]
+and fluxes $w_1=4^{2n-3}y_1$, $w_i=4^{2n-2i-1}y_{i-1}y_i$ for $2\leq i<n$, and $w_n=y_{n-1}y_n$. The equations of that earlier system, multiplied individually by positive constants, are
+\[
+G_i=w_i-d_i-y_n^2=0\quad(1\leq i\leq n).
+\]
+Since $b_i/4=d_i-d_{i+1}$ for $i<n$ and $b_n/4=d_n$, the chemical vector field is
+\[
+f_i=G_{i+1}-G_i\quad(i<n),\qquad f_n=-G_n.
+\]
+The vector $(1/4,t+d_1,\ldots,t+d_n,t)$ is a strictly positive kernel vector of the stoichiometric matrix for every $t>0$, establishing dynamic nontriviality. The displayed row-difference transformation is invertible. Coordinate reversal, positive equation scaling, and this transformation preserve the positive equilibrium set and Jacobian nonsingularity. The cited theorem therefore proves the asserted equilibrium count and nondegeneracy. These equation operations do not identify the dynamics or preserve stability; any stability claim requires analysis of the original chemical vector field.
+\end{proof}
+For $n=3$ the proposition gives
+\[
+\zero\to240X+15Y+Z,\quad X\to\zero,\quad X+Y\to2X,\quad
+Y+Z\to2Y,\quad2Z\to3Z,
+\]
+with rates $(1/4,64,4,1,1)$. This already proves general attainment. The next theorem gives a different rational parameter choice, in the same family up to positive coordinate scaling and invertible equation operations, together with a self-contained uniform root-separation proof. The underlying maximal-root polynomial chain and alternating-product mechanism are credited to \cite{PR}.
+
+\section{A construction in every dimension}
+\begin{theorem}\label{thm:main}
+For every integer $n\geq2$, there is a quadratic $(n,n+2,n)$ mass-action network with exactly $n+1$ positive equilibria, all nondegenerate, at explicitly specified positive rational rate constants.
+
+Specifically, put $R=25$, $s_i=R^{n+1-i}$ for $1\leq i\leq n$, $s_{n+1}=0$, and $a_i=s_i-s_{i+1}$. Use the reactions
+\begin{align}
+\zero&\longrightarrow \sum_{i=1}^n a_iX_i, &\text{rate constant }&1,\label{eq:inflow}\\
+X_1&\longrightarrow\zero, & &1,\nonumber\\
+X_i+X_{i+1}&\longrightarrow 2X_i\quad(1\leq i<n), & &1,\nonumber\\
+2X_n&\longrightarrow3X_n, &&k_n=5^{(-1)^n(2n+1)}.\label{eq:terminal}
+\end{align}
+Each equilibrium is uniquely parameterized by a root $t>0$ of
+\begin{equation}\label{eq:master}
+H_n(t)=C_n,\qquad
+H_n(t)=\frac1t\prod_{r=1}^n(t+R^r)^{2(-1)^{r-1}},\qquad C_n=k_n^{-1}.
+\end{equation}
+There is exactly one such root in each interval $(R^j,R^{j+1})$, $0\leq j\leq n$.
+\end{theorem}
+
+\subsection{Fluxes and positive reconstruction}\label{sec:flux}
+All $a_i$ are positive integers. There are $n+2$ distinct reactions and sources, and every source is quadratic. The stoichiometric columns $-e_1,e_1-e_2,\ldots,e_{n-1}-e_n$ already span $\R^n$, so the rank is $n$. The source vectors $0,e_1,e_1+e_2,\ldots,e_{n-1}+e_n$ are affinely independent, giving source rank $n$. For every $t>0$, the positive flux vector $(1,t+s_1,\ldots,t+s_n,t)$ lies in $\ker\Gamma$, since $a_i=s_i-s_{i+1}$. Thus the network is dynamically nontrivial and not source deficient, verifying the remaining upper-bound hypotheses without presupposing the equilibrium count.
+
+Define reaction fluxes
+\[
+v_1=x_1,\qquad v_i=x_{i-1}x_i\ (2\leq i\leq n),\qquad v_{n+1}=k_nx_n^2.
+\]
+The vector field has components
+\begin{equation}\label{eq:balance}
+f_i(x)=a_i-v_i+v_{i+1},\qquad1\leq i\leq n.
+\end{equation}
+At equilibrium, writing $t=v_{n+1}>0$, the balances telescope to $v_i=t+s_i$. Conversely, these balances reconstruct a unique positive concentration vector by
+\begin{equation}\label{eq:reconstruct}
+x_1(t)=t+s_1,\qquad x_i(t)=\frac{t+s_i}{x_{i-1}(t)}\quad(2\leq i\leq n).
+\end{equation}
+The terminal condition is $k_nx_n(t)^2=t$. Iterating \eqref{eq:reconstruct} and reversing the index gives
+\[
+\frac{x_n(t)^2}{t}=\frac1t\prod_{r=1}^n(t+R^r)^{2(-1)^{r-1}}=H_n(t).
+\]
+Thus \eqref{eq:master} is necessary and sufficient; no positive equilibria are omitted or spuriously added.
+
+\subsection{An exact oscillation estimate}
+Set $\epsilon_r=(-1)^{r-1}$ and
+\[
+B=2\sum_{r=1}^n\epsilon_r r
+=\begin{cases}n+1,&n\text{ odd},\\-n,&n\text{ even}.\end{cases}
+\]
+Then $C_n=R^{B-1/2}$. At $t=R^j$, for $0\leq j\leq n+1$, factor the larger power of $R$ from each summand to obtain
+\begin{equation}\label{eq:correction}
+H_n(R^j)=R^{E_j}D_j,\quad
+E_j=-j+2\sum_{r=1}^n\epsilon_r\max(j,r),\quad
+D_j=\prod_{r=1}^n(1+R^{-|j-r|})^{2\epsilon_r}.
+\end{equation}
+We have $E_0=B$ and
+\[
+E_{j+1}-E_j=-1+2\sum_{r\leq j}\epsilon_r.
+\]
+Consequently $E_j=B$ for even $j$, and $E_j=B-1$ for odd $j$.
+
+We next bound the correction uniformly in $n$ and $j$. There is at most one factor with $r=j$; its contribution is either $4$ or $1/4$. For all remaining factors let $b_r=R^{-|j-r|}$. Their sum is at most
+\[
+S=2\sum_{d\geq1}25^{-d}=\frac1{12}.
+\]
+For nonnegative numbers $b_r$ with sum at most $S<1$,
+\[
+\prod_r(1+b_r)\leq\frac1{1-S}.
+\]
+Indeed, every elementary symmetric sum of order $m$ is at most $S^m$, and summing these inequalities proves the assertion. It follows, allowing the unfavorable sign for every factor, that
+\begin{equation}\label{eq:D-bound}
+M^{-1}\leq D_j\leq M,\qquad M=4(12/11)^2=\frac{576}{121}<5.
+\end{equation}
+Thus
+\begin{equation}\label{eq:alternation}
+\frac{H_n(R^j)}{C_n}
+\begin{cases}>1,&j\text{ even},\\<1,&j\text{ odd}.
+\end{cases}
+\end{equation}
+For even $j$ the ratio is at least $5/M>1$; for odd $j$ it is at most $M/5<1$. Continuity gives a root in each of the $n+1$ disjoint intervals in Theorem~\ref{thm:main}.
+
+\subsection{Exhaustiveness and simplicity}
+Clearing the positive denominator in \eqref{eq:master} gives the polynomial
+\begin{equation}\label{eq:poly-general}
+P_n(t)=\prod_{\substack{1\leq r\leq n\\r\text{ odd}}}(t+R^r)^2
+-C_nt\prod_{\substack{1\leq r\leq n\\r\text{ even}}}(t+R^r)^2.
+\end{equation}
+If $n$ is odd, the two terms have degrees $n+1$ and $n$; if $n$ is even, their degrees are $n$ and $n+1$. Hence $P_n$ has degree exactly $n+1$. The $n+1$ roots already found are therefore its only roots, and each has multiplicity one. In particular $H_n'(t)\ne0$ at every root. This degree argument uses exact sign inequalities, not a numerical plot.
+
+\subsection{Nondegeneracy}
+For completeness, nondegeneracy is verified in the original dynamical system. Introduce one extra variable $t$ and the equations
+\[
+E_1=x_1-t-s_1=0,\quad
+E_i=x_{i-1}x_i-t-s_i=0\ (2\leq i\leq n),\quad
+E_{n+1}=k_nx_n^2-t=0.
+\]
+The $x$-Jacobian of the first $n$ equations is lower triangular with diagonal $(1,x_1,\ldots,x_{n-1})$, and is invertible in the positive orthant. Its Schur complement in the full augmented Jacobian is
+\[
+\frac{d}{dt}\bigl(k_nx_n(t)^2-t\bigr)
+=k_n tH_n'(t)
+\]
+at an equilibrium, which is nonzero. Thus the augmented Jacobian is nonsingular. Moreover $f_i=E_{i+1}-E_i$. The equations $(f_1,\ldots,f_n,E_{n+1})$ are an invertible linear transformation of $(E_1,\ldots,E_{n+1})$, and their Jacobian has block form
+\[
+\begin{pmatrix}D_x f&0\\ *&-1\end{pmatrix}.
+\]
+It follows that $D_xf$ is nonsingular. This completes the proof of Theorem~\ref{thm:main}.
+
+\section{A small reciprocal-quartic family on three species}
+The uniform construction prioritizes a short proof over small product coefficients. A more compact family uses
+\begin{equation}\label{eq:A-network}
+\begin{array}{c@{\qquad}c}
+\text{reaction}&\text{rate constant}\\\hline
+\zero\longrightarrow N(N-1)X+Y+(N-1)Z&1/N\\
+X\longrightarrow\zero&N\\
+2Y\longrightarrow3Y&N/K\\
+X+Z\longrightarrow2X&1\\
+Y+Z\longrightarrow2Z&1/N.
+\end{array}
+\end{equation}
+\begin{proposition}\label{prop:A}
+For every integer $N\geq6$ and every real $K$ satisfying
+\begin{equation}\label{eq:K-window}
+4(N-1)^2<K<\frac{(N+1)^4}{4N},
+\end{equation}
+network \eqref{eq:A-network} has exactly four positive equilibria, all nondegenerate. Rational $K$ gives rational rate constants.
+\end{proposition}
+\begin{proof}
+The vector field is
+\[
+f_1=N-1-Nx+xz,\quad
+f_2=\frac1N+\frac{N}{K}y^2-\frac1N yz,\quad
+f_3=\frac{N-1}{N}-xz+\frac1N yz.
+\]
+At a positive equilibrium these equations give $yz=1+N^2y^2/K>1$ and $yz=N^2x-N^2+1$, so $x>1$. Set $t=1/(x-1)>0$. Solving $f_1=f_3=0$ yields
+\begin{equation}\label{eq:A-map}
+x=\frac{t+1}{t},\qquad y=\frac{(t+1)(t+N^2)}{t(t+N)},\qquad z=\frac{t+N}{t+1}.
+\end{equation}
+Substitution gives $f_2=NP(t)/[Kt^2(t+N)^2]$, where
+\begin{equation}\label{eq:A-poly}
+P(t)=(t+1)^2(t+N^2)^2-Kt(t+N)^2.
+\end{equation}
+The positive roots are therefore exactly the positive equilibria. Put $v=\sqrt t+N/\sqrt t\geq2\sqrt N$. Equation $P(t)=0$ becomes
+\[
+\sqrt K=v+\frac{(N-1)^2}{v}.
+\]
+When $N\geq6$, $N-1>2\sqrt N$. The function on the right decreases from $(N+1)^2/(2\sqrt N)$ to $2(N-1)$, then increases to infinity. Condition \eqref{eq:K-window} gives two distinct solutions $v>2\sqrt N$, each with two distinct positive preimages $t$. Hence the quartic has four distinct positive roots and all are simple. Its equilibrium Jacobian satisfies
+\begin{equation}\label{eq:A-det}
+\det Df=-\frac{P'(t)}{Kt(t+N)}\qquad\text{when }P(t)=0.
+\end{equation}
+One can obtain \eqref{eq:A-det} by differentiating the residual along \eqref{eq:A-map}; it is also checked symbolically in the accompanying verifier. The stoichiometric columns for $X\to\zero$, $2Y\to3Y$, and $X+Z\to2X$ already have rank three.
+\end{proof}
+
+For example, $N=7$ and $K=145$ give the five reactions
+\[
+\zero\to42X+Y+6Z,\quad X\to\zero,\quad2Y\to3Y,\quad
+X+Z\to2X,\quad Y+Z\to2Z
+\]
+with rate constants $(1/7,7,7/145,1,1/7)$. The polynomial is
+\[
+P(t)=t^4-45t^3+568t^2-2205t+2401.
+\]
+Writing $q=t+49/t$ gives $P(t)/t^2=q^2-45q+470$. Both roots $(45\pm\sqrt{145})/2$ exceed $14$, and each produces two positive simple roots of $t^2-qt+49=0$. Equivalently, four exact isolating intervals are $(1,2),(3,4),(12,13),(26,27)$; their endpoint signs are verified in the package. A smaller inflow within this symmetric family is obtained from $N=6$, $K=4801/48$, giving product $30X+Y+5Z$. No global molecularity-minimality claim is made.
+
+\begin{corollary}[Local bistability of the reciprocal example]\label{cor:stability}
+For $N=7$ and $K=145$, the four positive equilibria, ordered by increasing $t$, are respectively a saddle, a sink, a saddle, and a sink. Each saddle is hyperbolic with one unstable direction; each sink is locally asymptotically stable.
+\end{corollary}
+\begin{proof}
+Write the characteristic polynomial of the original chemical Jacobian as
+$\lambda^3+a(t)\lambda^2+b(t)\lambda+c(t)$. Substituting \eqref{eq:A-map} and the equilibrium relation gives
+\begin{align*}
+a(t)&=\frac{49t^3+2623t^2+14363t-2107}{7(t+1)(t+7)(t+49)},\\
+b(t)&=\frac{2(25t^5+1031t^4+2941t^3+8785t^2+21854t+9604)}
+{7t(t+1)^2(t+7)(t+49)},\\
+c(t)&=\frac{(t-7)(t^2-22t+49)}{t(t+49)(t+1)}.
+\end{align*}
+Moreover $ab-c=U(t)/[49t(t+1)^3(t+7)^2(t+49)^2]$, where
+\begin{align*}
+U(t)={}&2401t^8+230424t^7+6455174t^6+46202960t^5\\
+&+126203376t^4+338658376t^3+655594618t^2\\
+&+252969360t-117649.
+\end{align*}
+All four roots have $t>1$. On this domain the denominators are positive, $b>0$, and the negative constant terms in the numerators of $a$ and $ab-c$ are strictly dominated by their positive linear terms. Thus $a,b,ab-c>0$.
+
+The monic quartic $P$ has derivative signs $-,+,-,+$ at its four ordered simple roots. Since $c=-\det Df=P'(t)/[145t(t+7)]$ there, $c$ has the same signs. At roots 2 and 4, the cubic Routh--Hurwitz criterion ($a,b,c>0$ and $ab>c$) places all eigenvalues in the open left half-plane. At roots 1 and 3, Descartes' rule gives exactly one positive real eigenvalue $\rho$. The other two eigenvalues have sum $-a-\rho<0$ and product $-c/\rho>0$; they therefore both have negative real parts, whether real or a conjugate pair. All equilibria are hyperbolic, proving the classification.
+\end{proof}
+This is local bistability: two distinct positive equilibria attract sufficiently close initial conditions. No global convergence, complete basin description, or absence of other attractors follows. The supplementary stability proof records the Jacobian and exact algebraic identities used above.
+
+\section{An inflow-free example with product molecularity ten}
+\begin{proposition}\label{prop:B}
+The following network has four positive nondegenerate equilibria:
+\begin{equation}\label{eq:B-network}
+\begin{array}{c@{\qquad}c}
+\text{reaction}&\text{rate constant}\\\hline
+X\longrightarrow\zero&1\\
+Y\longrightarrow6X+4Z&1\\
+2X\longrightarrow6Y+4Z&1\\
+2Z\longrightarrow4Y&2/3137\\
+Y+Z\longrightarrow\zero&1.
+\end{array}
+\end{equation}
+\end{proposition}
+\begin{proof}
+In the displayed order the stoichiometric matrix is
+\[
+\Gamma=\begin{pmatrix}-1&6&-2&0&0\\0&-1&6&4&-1\\0&4&4&-2&-1\end{pmatrix}.
+\]
+It has rank three. Every positive flux in its kernel has a unique representation
+\[
+v=\lambda\bigl(2(7t+1),\ 2(t+1),\ 5-t,\ 2t,\ 28\bigr)^\top,
+\qquad \lambda>0,\quad 0<t<5.
+\]
+Indeed, $\lambda=v_5/28$ and $t=v_4/(2\lambda)$, and substitution into the three linear equations determines the remaining coordinates. Matching $v=(x,y,x^2,(2/3137)z^2,yz)$ first gives
+\begin{equation}\label{eq:B-map}
+x=\frac{5-t}{2(7t+1)},\qquad
+y=\frac{(5-t)(t+1)}{2(7t+1)^2},\qquad
+z=\frac{14}{t+1}.
+\end{equation}
+The remaining flux equation is equivalent to
+\begin{equation}\label{eq:B-poly}
+Q(t)=3137t(5-t)(t+1)^2-784(7t+1)^2=0.
+\end{equation}
+At the five rational points $0,1/2,5/7,1,5$, the signs of $Q$ are, respectively, $-,+,-,+,-$. Thus there are four distinct roots in $(0,5)$. Since $Q$ is a quartic, these are all its roots and all are simple. Formula \eqref{eq:B-map} reconstructs a unique positive equilibrium at every root.
+
+Direct differentiation of the displayed reaction vector field gives, at a root of $Q$,
+\[
+\det Df=\frac{(5-t)Q'(t)}{6274(t+1)(7t+1)^2}.
+\]
+The coefficient is positive on $(0,5)$ and every root is simple, so the original Jacobian is nonsingular. The accompanying exact verifier checks this determinant identity modulo $Q$; its off-root remainder is given in the supplementary proof.
+\end{proof}
+
+\begin{corollary}[Exact interval in one rate]\label{cor:B-window}
+Keep the reactions in \eqref{eq:B-network} and set the rates to $(1,1,1,1/L,1)$, with $L>0$. This network has four distinct positive nondegenerate equilibria if and only if
+\[
+1568<L<\frac{117649}{75}.
+\]
+Here $L$ is the inverse fourth rate, independent of the parameter $K$ in Proposition~\ref{prop:A}; the displayed rational witness has $L=3137/2$.
+\end{corollary}
+\begin{proof}
+The flux parametrization and positive reconstruction \eqref{eq:B-map} are unchanged. The final condition is
+\[
+R_B(t)=\frac{392(7t+1)^2}{t(5-t)(t+1)^2}=L,\qquad0<t<5.
+\]
+Its derivative factors as
+\[
+R_B'(t)=\frac{392(t-1)(2t-1)(7t-5)(7t+1)}{t^2(t-5)^2(t+1)^3}.
+\]
+It is successively negative, positive, negative, and positive on the four intervals cut by $1/2,5/7,1$. Both endpoint limits are infinite. The two minima are $R_B(1/2)=R_B(1)=1568$; the intervening maximum is $R_B(5/7)=117649/75$. Strict monotonicity gives precisely four intersections with a horizontal line exactly in the claimed interval.
+
+For nondegeneracy, set $Q_L(t)=Lt(5-t)(t+1)^2-392(7t+1)^2$. At its roots, direct Jacobian evaluation gives
+\[
+\det Df=\frac{(5-t)Q_L'(t)}{2L(t+1)(7t+1)^2}.
+\]
+Also $Q_L'=-t(5-t)(t+1)^2R_B'$ at a root. Thus all four intersections in the open interval are nondegenerate. Below the lower endpoint there are no positive equilibria; at it there are two distinct double roots. At the upper endpoint there are three distinct positive roots, one double and two simple; above it there are two simple positive roots. The double multiplicities follow from the simple zeros of $R_B'$ at its three critical points.
+\end{proof}
+The interval has width $49/75$, equal to $1/2400$ of its lower endpoint. This measures only the displayed inverse-rate slice, not robustness across the full rate space. The boundary multiplicities alone make no assertion of a cusp or any other dynamical bifurcation.
+
+\section{The two quartic source-support types}\label{sec:supports}
+For an ordered five-source support $(a_1,\ldots,a_5)$ of affine rank three, let $w\in\mathbb Z^5$ be its primitive affine relation: $\sum_iw_i a_i=0$, $\sum_iw_i=0$, and $\gcd(w_i)=1$. Its degree is $\sum_{w_i>0}w_i=\tfrac12\sum_i|w_i|$, independent of the sign chosen for $w$. The supports of our two examples have the following data.
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Ordered source support & Primitive relation $w$ & Degree\\
+\midrule
+$0,X,2Y,X+Z,Y+Z$ & $(-1,2,-1,-2,2)$ & $4$\\
+$X,Y,2X,2Z,Y+Z$ & $(2,-2,-1,-1,2)$ & $4$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Both augmented source matrices have rank four: their first four rows give determinants $-2$ and $2$, respectively. Thus the source rank is three and neither network is source deficient. Their stoichiometric ranks were verified above, and their positive equilibrium fluxes establish dynamic nontriviality. Hence both meet the upper-bound hypotheses in Section~1.
+
+Banaji--Feliu's maximal-degree discussion identifies two restrictive source-graph configurations \cite[Remark 5.4(1) and Remark 5.7]{BF}. The table gives their three-species support realizations: one support contains a single doubled-species source and the other contains two. Exact enumeration of all $\binom{10}{5}=252$ five-element subsets of the quadratic monomials yields 24 affinely deficient supports and, at affine rank three, 156, 60, and 12 supports of relation degree 2, 3, and 4. The twelve degree-four supports form two species-permutation orbits of six, represented in the table. This finite classification concerns source supports only; it does not classify products, rate constants, all reaction networks, or minimal product molecularity. The existence proofs do not depend on the enumeration.
+
+\section{Scope, reproducibility, and remaining questions}
+Proposition~\ref{prop:PR} proves attainment for every $n\geq3$ in the question of Banaji and Feliu by realizing the earlier polynomial chain; Theorem~\ref{thm:main} gives a separate self-contained proof at another parameter choice. Both also include the already attainable case $n=2$. The proofs are uniform in $n$; checking finitely many instances is supplementary evidence. No product-molecularity restriction is added. The inflow molecularities are $16^{n-1}$ and $25^n$, respectively, so these are not claims of chemically economical realization.
+
+The inflow-free example bounds the required maximum product molecularity by ten in dimension three, without proving minimality. Corollary~\ref{cor:stability} proves two local sinks in one reciprocal example, not four stable attractors or a global phase portrait. Neither chemical admissibility in the mass-action sense nor the root counts establish experimental realizability, conservation, or thermodynamic detailed balance.
+
+The package contains exact checks of the reaction data, scalar identities, rational sign brackets, Jacobian nondegeneracy, and finite instances of the general construction. Deliberately corrupted inputs are rejected. The manuscript's universal proof remains a mathematical argument, not a claim that a finite computation verifies every $n$. Internal parallel derivations and audits were used; no external peer review or independent external reproduction is claimed.
+
+\paragraph{Availability and disclosure.}
+The manuscript source, exact verification programs, data, and assurance records are supplied in the accompanying research package and its \href{https://github.com/ipitchford/quadratic-mass-action-sharpness}{source repository}. The candidate archive has reserved DOI \href{https://doi.org/10.5281/zenodo.23146115}{10.5281/zenodo.23146115}; reservation alone does not assert that the archive has been published. Original prose and mathematical data are dedicated under CC0-1.0; original code is provided under the MIT license. This work used AI-assisted mathematical reasoning, programming, literature searches, and internal audits. The scholarly creator is recorded as Anonymous under the intended publisher's convention. The supplied review informed this revision; no independent human peer review or experimental validation is claimed.
+
+\begin{thebibliography}{9}
+\bibitem{BF} M.~Banaji and E.~Feliu, Positive equilibria in mass action networks: geometry and bounds, \emph{Journal of Mathematical Biology} \textbf{93}, article 37 (2026). \href{https://doi.org/10.1007/s00285-026-02429-8}{doi:10.1007/s00285-026-02429-8}.
+\bibitem{BBH} M.~Banaji, B.~Boros, and J.~Hofbauer, Bifurcations in planar, quadratic mass-action networks with few reactions and low molecularity, \emph{Nonlinear Dynamics} \textbf{112}, 21425--21448 (2024). \href{https://doi.org/10.1007/s11071-024-10068-1}{doi:10.1007/s11071-024-10068-1}.
+\bibitem{Bihan} F.~Bihan, Maximally positive polynomial systems supported on circuits, \emph{Journal of Symbolic Computation} \textbf{68}, 61--74 (2015). \href{https://doi.org/10.1016/j.jsc.2014.09.003}{doi:10.1016/j.jsc.2014.09.003}.
+\bibitem{EH} B.~El Hilany, Characterization of circuits supporting polynomial systems with the maximal number of positive solutions, \emph{Discrete \& Computational Geometry} \textbf{58}, 355--370 (2017). \href{https://doi.org/10.1007/s00454-017-9897-4}{doi:10.1007/s00454-017-9897-4}.
+\bibitem{BDF} F.~Bihan, A.~Dickenstein, and J.~Forsg\aa rd, Optimal Descartes' rule of signs for systems supported on circuits, \emph{Mathematische Annalen} \textbf{381}, 1283--1307 (2021). \href{https://doi.org/10.1007/s00208-021-02216-4}{doi:10.1007/s00208-021-02216-4}.
+\bibitem{PR} K.~Phillipson and J.~M.~Rojas, Fewnomial systems with many roots, and an adelic tau conjecture, in \emph{Tropical and Non-Archimedean Geometry}, Contemporary Mathematics \textbf{605}, 45--71 (2013). \href{https://doi.org/10.1090/conm/605/12111}{doi:10.1090/conm/605/12111}. Inspected version: \href{https://arxiv.org/abs/1011.4128v5}{arXiv:1011.4128v5} (2012).
+\end{thebibliography}
+\end{document}

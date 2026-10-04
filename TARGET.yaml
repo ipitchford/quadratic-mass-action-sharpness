@@ -1,0 +1,57 @@
+title: Four positive equilibria in a quadratic three-species five-reaction network
+date: 2026-10-04
+source: https://doi.org/10.1007/s00285-026-02429-8
+source_location: Remark 5.8 and Theorem 5.5
+contribution_unit: exact resolution with complete proof and independently checkable
+  evidence
+statement: Determine whether there exist A in Z_nonnegative^(5x3), each row sum at
+  most 2, B in Z_nonnegative^(5x3), distinct source/product in every row, Gamma=(B-A)^T
+  of rank 3, and k in R_positive^5 such that Gamma diag(k) x^A=0 has four distinct
+  solutions x in R_positive^3, each with nonsingular Jacobian.
+negative_target: Every admissible A, B, and k has at most three such equilibria.
+exclusions:
+- No upper bound on product molecularity.
+- No requirement of stability.
+- A search cutoff or numerical failure is not a universal proof.
+- Publication, DOI registration and canonical public readback are separate from proof
+  and local verification.
+fingerprints:
+  monomials:
+  - 1
+  - x
+  - y
+  - z
+  - x^2
+  - y^2
+  - z^2
+  - xy
+  - xz
+  - yz
+  source_support_count: 252
+  coefficient_normalisation: C=Gamma diag(k)
+  kinetic_necessary_condition: C_ij >= 0 whenever A_ji=0
+  full_rank_kernel_dimension: 2
+  affine_relation: w in ker([A|1]^T), primitive integer vector
+  reduced_equation: product(h_i(t)^w_i_positive) - K product(h_i(t)^w_i_negative)=0
+  aliases:
+  - fewnomial positive solutions
+  - polynomial systems supported on a circuit
+  - Gale duality
+  - generalized polynomial Descartes rule
+  - multistationarity
+  - mass action steady states
+  - kinetic polynomial systems
+  sequences: Not a sequence conjecture; use exponent supports and circuit coefficients.
+  finite_examples: Two explicit three-species networks with exact positive reconstruction,
+    isolating intervals and nonsingular Jacobians; see examples.json and paper.tex.
+status: constructive proof in unrefereed publication candidate
+version: v1.0.0-candidate
+doi: 10.5281/zenodo.23146115
+concept_doi: 10.5281/zenodo.23146114
+repository: https://github.com/ipitchford/quadratic-mass-action-sharpness
+creator: Anonymous
+maintainer: Ian Pitchford / Evidence Press
+original_intake_status: active research; no solution claim
+extension: For every integer n>=2, an explicit quadratic (n,n+2,n) network has exactly
+  n+1 positive equilibria, all nondegenerate; the polynomial antecedent is credited
+  to Phillipson and Rojas.

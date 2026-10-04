@@ -1,0 +1,147 @@
+{
+  "archive_hash_scope": "Original archive absent; mathematical checks require no source files",
+  "checks": {
+    "inflow_free": {
+      "Q_coefficients": [
+        "-3137",
+        "9411",
+        "-10183",
+        "4709",
+        "-784"
+      ],
+      "absolute_width": "49/75",
+      "off_shell_determinant_identity": "verified",
+      "points": [
+        "0",
+        "1/2",
+        "5/7",
+        "1",
+        "5"
+      ],
+      "positive_roots": 4,
+      "rate_convention": "fourth rate is 1/K; supplied example K=3137/2",
+      "rate_window_K": [
+        "1568",
+        "117649/75"
+      ],
+      "relative_width_to_lower_endpoint": "1/2400",
+      "values": [
+        "-784",
+        "81/16",
+        "-6624/2401",
+        "16",
+        "-1016064"
+      ]
+    },
+    "integer_sign_spot_checks": {
+      "dimensions": [
+        2,
+        50
+      ],
+      "endpoint_comparisons": 1372,
+      "method": "integer cross multiplication; no CAS and no floating point",
+      "uniform_proof": "the analytic correction-factor bound, not these finite tests"
+    },
+    "prior_family_translation": {
+      "main_R25_to_PR_r5_dimensions": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "note": "finite identity checks corroborate the symbolic all-dimensional formula; no stability equivalence asserted",
+      "original_PR_equations_to_chemical_vector_field_dimensions": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "reciprocal_family": {
+      "endpoint_values": [
+        [
+          1,
+          2,
+          "720",
+          "-81"
+        ],
+        [
+          3,
+          4,
+          "-236",
+          "45"
+        ],
+        [
+          12,
+          13,
+          "709",
+          "-576"
+        ],
+        [
+          26,
+          27,
+          "-4905",
+          "2644"
+        ]
+      ],
+      "jacobian_identity": "verified exactly on P=0",
+      "positive_roots_example": 4,
+      "rank_minor": "1",
+      "symbolic_parameters": "N,K"
+    },
+    "reciprocal_stability": {
+      "a_b_ab_minus_c_positive_for": "t>1, proved by positive coefficients after t=u+1",
+      "classification": [
+        "index-one saddle",
+        "sink",
+        "index-one saddle",
+        "sink"
+      ],
+      "constant_term_signs_in_root_order": [
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "scope": "local stability only, not a global phase portrait"
+    },
+    "support_enumeration": {
+      "degree_counts": {
+        "2": 156,
+        "3": 60,
+        "4": 12,
+        "affinely deficient": 24
+      },
+      "method": "signed 4x4 cofactors; gcd primitive relation; S3 canonicalization",
+      "number": 252,
+      "quartic_orbit_sizes": [
+        6,
+        6
+      ],
+      "scope": "source supports only, not full reaction networks or molecularity optimum"
+    }
+  },
+  "method": "independently entered reaction data and original checker; common SymPy backend",
+  "python": "3.14.7",
+  "reported_check_invocations": 1791,
+  "review_date": "2026-10-04",
+  "runtime_seconds": 0.704,
+  "script_sha256": "ac93a7a30599353eb69a8697f26b5ca7da60fb7ade46bb6fd63135663732986a",
+  "source_zip_sha256": null,
+  "status": "PASS",
+  "sympy": "1.14.0"
+}

@@ -1,0 +1,48 @@
+{
+  "title": "Sharp positive-equilibrium counts in quadratic mass-action networks with two more reactions than species",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Pitchford, Ian",
+      "type": "ContactPerson",
+      "affiliation": "Evidence Press"
+    }
+  ],
+  "version": "v1.0.0-candidate",
+  "doi": "10.5281/zenodo.23146115",
+  "publication_date": "2026-10-04",
+  "description": "<p>Unrefereed mathematical candidate presenting an explicitly admissible mass-action realization of the established Phillipson–Rojas extremal polynomial chain. For every integer n≥2 the displayed quadratic network has n species, n+2 reactions and exactly n+1 positive equilibria, all nondegenerate. Two exact three-species examples include an inflow-free network with maximum product molecularity ten, an exact one-rate interval, and a reciprocal example with two local sinks and two saddles. The PDF and TeX are authoritative; exact programs and receipts provide computational corroboration.</p><p>The scholarly creator is Anonymous; Ian Pitchford maintains the package for Evidence Press. The supplied referee-style material has unverified reviewer identity and is not journal acceptance or an official research assessment.</p>",
+  "access_right": "open",
+  "license": "cc-zero",
+  "notes": "Candidate metadata: the version DOI is reserved at the metadata snapshot; public availability requires canonical readback; concept DOI 10.5281/zenodo.23146114. The record-level CC0 label applies to original manuscript, data and metadata only. Original package code is MIT. Supplied reviewer code and review material have license status NOASSERTION and are excluded from both original-material grants; see LICENSES.md. Full supplied review text is not redistributed.",
+  "keywords": [
+    "chemical reaction networks",
+    "mass-action kinetics",
+    "positive equilibria",
+    "fewnomials",
+    "exact verification"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/quadratic-mass-action-sharpness",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "10.1007/s00285-026-02429-8",
+      "relation": "cites",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1090/conm/605/12111",
+      "relation": "cites",
+      "resource_type": "publication-article"
+    }
+  ]
+}

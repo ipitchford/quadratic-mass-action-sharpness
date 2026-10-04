@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "checkedAt": "2026-10-04T21:56:00.981467+00:00",
+  "status": "VISUAL_AND_TEXT_QA_PASS",
+  "paperTexSha256": "d3058105609a31fdf7dcf214a74da09498ec81b98fdb55408b059131e8a562b9",
+  "paperPdfSha256": "d2f4e4a92b145f4a13a50c5eaefea7f3e772ad94e4af7810cbe9fa6212e06a76",
+  "pages": 10,
+  "allPagesVisuallyInspected": true,
+  "compiler": "pdfTeX 1.40.29; native desktop compiler also success",
+  "fonts": "All 20 embedded; no missing fonts",
+  "diagnostics": [
+    "One 0.31099pt overfull text box; inspected on page 8, no clipping or overlapping content."
+  ],
+  "authority": "PDF and TeX; defective v1 Markdown excluded from current package",
+  "limitations": [
+    "Mathematical review is separate from layout inspection",
+    "PDF is not tagged for screen readers; README is accessible overview"
+  ]
+}

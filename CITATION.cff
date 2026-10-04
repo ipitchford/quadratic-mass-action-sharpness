@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: >-
+  Please cite the candidate manuscript using preferred-citation. Anonymous is
+  the scholarly creator; Ian Pitchford is the package maintainer. This is a
+  unrefereed publication candidate, not journal acceptance. The DOI is reserved at the metadata snapshot;
+  publication is established separately by canonical readback. Component licenses are in LICENSES.md.
+title: "Sharp positive-equilibrium counts in quadratic mass-action networks with two more reactions than species"
+authors:
+  - name: Anonymous
+contact:
+  - family-names: Pitchford
+    given-names: Ian
+    affiliation: Evidence Press
+version: "v1.0.0-candidate"
+type: software
+doi: 10.5281/zenodo.23146115
+repository-code: https://github.com/ipitchford/quadratic-mass-action-sharpness
+url: https://doi.org/10.5281/zenodo.23146115
+license-url: https://github.com/ipitchford/quadratic-mass-action-sharpness/blob/v1.0.0-candidate/LICENSES.md
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23146114
+    description: "Reserved concept DOI; publication status is recorded in STATUS.md."
+keywords:
+  - chemical reaction networks
+  - mass-action kinetics
+  - positive equilibria
+  - fewnomials
+preferred-citation:
+  type: article
+  title: "Sharp positive-equilibrium counts in quadratic mass-action networks with two more reactions than species"
+  authors:
+    - name: Anonymous
+  year: 2026
+  month: 10
+  doi: 10.5281/zenodo.23146115
+  version: "v1.0.0-candidate"
+  url: https://doi.org/10.5281/zenodo.23146115

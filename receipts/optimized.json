@@ -1,0 +1,585 @@
+{
+  "examples": [
+    {
+      "name": "Reciprocal family N=7 K=145",
+      "rank": 3,
+      "roots": 4,
+      "polynomial": "t**4 - 45*t**3 + 568*t**2 - 2205*t + 2401",
+      "exact_test_values": [
+        "720",
+        "-81",
+        "-236",
+        "45",
+        "709",
+        "-576",
+        "-4905",
+        "2644"
+      ],
+      "jacobian_identity": "PASS",
+      "max_product_molecularity": 49
+    },
+    {
+      "name": "Inflow-free molecularity-ten example",
+      "rank": 3,
+      "roots": 4,
+      "polynomial": "-3137*t**4 + 9411*t**3 - 10183*t**2 + 4709*t - 784",
+      "exact_test_values": [
+        "-784",
+        "81/16",
+        "-6624/2401",
+        "16",
+        "-1016064"
+      ],
+      "jacobian_identity": "PASS",
+      "max_product_molecularity": 10
+    }
+  ],
+  "finite_general_checks": [
+    {
+      "dimension": 2,
+      "rank": 2,
+      "reactions": 4,
+      "simple_positive_roots": 3,
+      "signs": [
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "dimension": 3,
+      "rank": 3,
+      "reactions": 5,
+      "simple_positive_roots": 4,
+      "signs": [
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "dimension": 4,
+      "rank": 4,
+      "reactions": 6,
+      "simple_positive_roots": 5,
+      "signs": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "dimension": 5,
+      "rank": 5,
+      "reactions": 7,
+      "simple_positive_roots": 6,
+      "signs": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "dimension": 6,
+      "rank": 6,
+      "reactions": 8,
+      "simple_positive_roots": 7,
+      "signs": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "dimension": 7,
+      "rank": 7,
+      "reactions": 9,
+      "simple_positive_roots": 8,
+      "signs": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "dimension": 8,
+      "rank": 8,
+      "reactions": 10,
+      "simple_positive_roots": 9,
+      "signs": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "dimension": 9,
+      "rank": 9,
+      "reactions": 11,
+      "simple_positive_roots": 10,
+      "signs": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "dimension": 10,
+      "rank": 10,
+      "reactions": 12,
+      "simple_positive_roots": 11,
+      "signs": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "dimension": 11,
+      "rank": 11,
+      "reactions": 13,
+      "simple_positive_roots": 12,
+      "signs": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "dimension": 12,
+      "rank": 12,
+      "reactions": 14,
+      "simple_positive_roots": 13,
+      "signs": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    }
+  ],
+  "prior_family_translation": [
+    {
+      "dimension": 2,
+      "epsilon": "1/4",
+      "coordinate_order": "reversed",
+      "identity": "PASS",
+      "scope": "equilibria and Jacobian nonsingularity; not stability"
+    },
+    {
+      "dimension": 3,
+      "epsilon": "1/4",
+      "coordinate_order": "reversed",
+      "identity": "PASS",
+      "scope": "equilibria and Jacobian nonsingularity; not stability"
+    },
+    {
+      "dimension": 4,
+      "epsilon": "1/4",
+      "coordinate_order": "reversed",
+      "identity": "PASS",
+      "scope": "equilibria and Jacobian nonsingularity; not stability"
+    },
+    {
+      "dimension": 5,
+      "epsilon": "1/4",
+      "coordinate_order": "reversed",
+      "identity": "PASS",
+      "scope": "equilibria and Jacobian nonsingularity; not stability"
+    },
+    {
+      "dimension": 6,
+      "epsilon": "1/4",
+      "coordinate_order": "reversed",
+      "identity": "PASS",
+      "scope": "equilibria and Jacobian nonsingularity; not stability"
+    },
+    {
+      "dimension": 7,
+      "epsilon": "1/4",
+      "coordinate_order": "reversed",
+      "identity": "PASS",
+      "scope": "equilibria and Jacobian nonsingularity; not stability"
+    },
+    {
+      "dimension": 8,
+      "epsilon": "1/4",
+      "coordinate_order": "reversed",
+      "identity": "PASS",
+      "scope": "equilibria and Jacobian nonsingularity; not stability"
+    },
+    {
+      "dimension": 9,
+      "epsilon": "1/4",
+      "coordinate_order": "reversed",
+      "identity": "PASS",
+      "scope": "equilibria and Jacobian nonsingularity; not stability"
+    },
+    {
+      "dimension": 10,
+      "epsilon": "1/4",
+      "coordinate_order": "reversed",
+      "identity": "PASS",
+      "scope": "equilibria and Jacobian nonsingularity; not stability"
+    },
+    {
+      "dimension": 11,
+      "epsilon": "1/4",
+      "coordinate_order": "reversed",
+      "identity": "PASS",
+      "scope": "equilibria and Jacobian nonsingularity; not stability"
+    },
+    {
+      "dimension": 12,
+      "epsilon": "1/4",
+      "coordinate_order": "reversed",
+      "identity": "PASS",
+      "scope": "equilibria and Jacobian nonsingularity; not stability"
+    }
+  ],
+  "R25_prior_family_scaling": [
+    {
+      "dimension": 2,
+      "coordinate_exponents_base_5": [
+        4,
+        -1
+      ],
+      "common_equation_factor": 125,
+      "identity": "PASS"
+    },
+    {
+      "dimension": 3,
+      "coordinate_exponents_base_5": [
+        6,
+        -2,
+        5
+      ],
+      "common_equation_factor": 125,
+      "identity": "PASS"
+    },
+    {
+      "dimension": 4,
+      "coordinate_exponents_base_5": [
+        8,
+        -2,
+        6,
+        -3
+      ],
+      "common_equation_factor": 125,
+      "identity": "PASS"
+    },
+    {
+      "dimension": 5,
+      "coordinate_exponents_base_5": [
+        10,
+        -2,
+        8,
+        -4,
+        7
+      ],
+      "common_equation_factor": 125,
+      "identity": "PASS"
+    },
+    {
+      "dimension": 6,
+      "coordinate_exponents_base_5": [
+        12,
+        -2,
+        10,
+        -4,
+        8,
+        -5
+      ],
+      "common_equation_factor": 125,
+      "identity": "PASS"
+    },
+    {
+      "dimension": 7,
+      "coordinate_exponents_base_5": [
+        14,
+        -2,
+        12,
+        -4,
+        10,
+        -6,
+        9
+      ],
+      "common_equation_factor": 125,
+      "identity": "PASS"
+    },
+    {
+      "dimension": 8,
+      "coordinate_exponents_base_5": [
+        16,
+        -2,
+        14,
+        -4,
+        12,
+        -6,
+        10,
+        -7
+      ],
+      "common_equation_factor": 125,
+      "identity": "PASS"
+    },
+    {
+      "dimension": 9,
+      "coordinate_exponents_base_5": [
+        18,
+        -2,
+        16,
+        -4,
+        14,
+        -6,
+        12,
+        -8,
+        11
+      ],
+      "common_equation_factor": 125,
+      "identity": "PASS"
+    },
+    {
+      "dimension": 10,
+      "coordinate_exponents_base_5": [
+        20,
+        -2,
+        18,
+        -4,
+        16,
+        -6,
+        14,
+        -8,
+        12,
+        -9
+      ],
+      "common_equation_factor": 125,
+      "identity": "PASS"
+    },
+    {
+      "dimension": 11,
+      "coordinate_exponents_base_5": [
+        22,
+        -2,
+        20,
+        -4,
+        18,
+        -6,
+        16,
+        -8,
+        14,
+        -10,
+        13
+      ],
+      "common_equation_factor": 125,
+      "identity": "PASS"
+    },
+    {
+      "dimension": 12,
+      "coordinate_exponents_base_5": [
+        24,
+        -2,
+        22,
+        -4,
+        20,
+        -6,
+        18,
+        -8,
+        16,
+        -10,
+        14,
+        -11
+      ],
+      "common_equation_factor": 125,
+      "identity": "PASS"
+    }
+  ],
+  "inflow_free_rate_family": {
+    "fourth_rate": "1/L",
+    "four_simple_positive_equilibria_iff": [
+      "1568",
+      "117649/75"
+    ],
+    "absolute_width": "49/75",
+    "relative_width_to_lower_endpoint": "1/2400",
+    "derivative": "(2*t - 1)*(7*t - 5)*(7*t + 1)*(392*t - 392)/(t**2*(t - 5)**2*(t + 1)**3)",
+    "scope": "one specified rate slice; no full-parameter robustness or cusp claim"
+  },
+  "reciprocal_example_stability": {
+    "parameters": {
+      "N": 7,
+      "K": 145
+    },
+    "characteristic_coefficients": [
+      "(49*t**3 + 2623*t**2 + 14363*t - 2107)/(7*(t + 1)*(t + 7)*(t + 49))",
+      "2*(25*t**5 + 1031*t**4 + 2941*t**3 + 8785*t**2 + 21854*t + 9604)/(7*t*(t + 1)**2*(t + 7)*(t + 49))",
+      "(t - 7)*(t**2 - 22*t + 49)/(t*(t + 1)*(t + 49))"
+    ],
+    "a_b_ab_minus_c_positive_for": "t>1; exact shifted-coefficient certificates",
+    "brackets": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        26,
+        27
+      ]
+    ],
+    "bracket_values": [
+      [
+        "720",
+        "-81"
+      ],
+      [
+        "-236",
+        "45"
+      ],
+      [
+        "709",
+        "-576"
+      ],
+      [
+        "-4905",
+        "2644"
+      ]
+    ],
+    "constant_term_signs_in_root_order": [
+      -1,
+      1,
+      -1,
+      1
+    ],
+    "classification": [
+      "index-one saddle",
+      "sink",
+      "index-one saddle",
+      "sink"
+    ],
+    "scope": "original chemical Jacobian; local stability only, no global convergence claim"
+  },
+  "negative_controls": [
+    {
+      "mutation": "wrong rate",
+      "rejected_by": "ODE residual identity"
+    },
+    {
+      "mutation": "wrong product",
+      "rejected_by": "ODE residual identity"
+    },
+    {
+      "mutation": "wrong eliminant",
+      "rejected_by": "ODE residual identity"
+    },
+    {
+      "mutation": "wrong reconstruction",
+      "rejected_by": "ODE residual identity"
+    },
+    {
+      "mutation": "insufficient geometric separation",
+      "rejected_by": "general exact alternating signs"
+    },
+    {
+      "mutation": "wrong prior-family epsilon",
+      "rejected_by": "Phillipson-Rojas epsilon=1/4 chemical translation"
+    },
+    {
+      "mutation": "wrong common equation scaling",
+      "rejected_by": "R=25 positive coordinate scaling to prior r=5 family"
+    },
+    {
+      "mutation": "wrong rate-curve derivative",
+      "rejected_by": "inflow-free rate-curve derivative"
+    },
+    {
+      "mutation": "wrong rate-window maximum",
+      "rejected_by": "inflow-free intermediate maximum"
+    },
+    {
+      "mutation": "wrong chemical characteristic coefficient",
+      "rejected_by": "original chemical Routh-Hurwitz coefficient identity"
+    },
+    {
+      "mutation": "false Routh-Hurwitz positivity",
+      "rejected_by": "Routh-Hurwitz positive coefficients on t>1"
+    }
+  ],
+  "status": "EXACT_CHECKS_PASS",
+  "checks_executed": 678,
+  "python": "3.14.7",
+  "sympy": "1.14.0",
+  "universal_scope": "Theorem proved in paper.tex; finite checks do not establish all n.",
+  "supplementary_check_provenance": "Formulas and checking approach from supplied 2026-10-04 referee audit; common SymPy backend, no algebra-engine independence claimed."
+}

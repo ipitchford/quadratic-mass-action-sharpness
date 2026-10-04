@@ -1,0 +1,253 @@
+{
+  "examples": [
+    {
+      "name": "Reciprocal family N=7 K=145",
+      "rank": 3,
+      "roots": 4,
+      "polynomial": "t**4 - 45*t**3 + 568*t**2 - 2205*t + 2401",
+      "exact_test_values": [
+        "720",
+        "-81",
+        "-236",
+        "45",
+        "709",
+        "-576",
+        "-4905",
+        "2644"
+      ],
+      "jacobian_identity": "PASS",
+      "max_product_molecularity": 49
+    },
+    {
+      "name": "Inflow-free molecularity-ten example",
+      "rank": 3,
+      "roots": 4,
+      "polynomial": "-3137*t**4 + 9411*t**3 - 10183*t**2 + 4709*t - 784",
+      "exact_test_values": [
+        "-784",
+        "81/16",
+        "-6624/2401",
+        "16",
+        "-1016064"
+      ],
+      "jacobian_identity": "PASS",
+      "max_product_molecularity": 10
+    }
+  ],
+  "finite_general_checks": [
+    {
+      "dimension": 2,
+      "rank": 2,
+      "reactions": 4,
+      "simple_positive_roots": 3,
+      "signs": [
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "dimension": 3,
+      "rank": 3,
+      "reactions": 5,
+      "simple_positive_roots": 4,
+      "signs": [
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "dimension": 4,
+      "rank": 4,
+      "reactions": 6,
+      "simple_positive_roots": 5,
+      "signs": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "dimension": 5,
+      "rank": 5,
+      "reactions": 7,
+      "simple_positive_roots": 6,
+      "signs": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "dimension": 6,
+      "rank": 6,
+      "reactions": 8,
+      "simple_positive_roots": 7,
+      "signs": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "dimension": 7,
+      "rank": 7,
+      "reactions": 9,
+      "simple_positive_roots": 8,
+      "signs": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "dimension": 8,
+      "rank": 8,
+      "reactions": 10,
+      "simple_positive_roots": 9,
+      "signs": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "dimension": 9,
+      "rank": 9,
+      "reactions": 11,
+      "simple_positive_roots": 10,
+      "signs": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "dimension": 10,
+      "rank": 10,
+      "reactions": 12,
+      "simple_positive_roots": 11,
+      "signs": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "dimension": 11,
+      "rank": 11,
+      "reactions": 13,
+      "simple_positive_roots": 12,
+      "signs": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "dimension": 12,
+      "rank": 12,
+      "reactions": 14,
+      "simple_positive_roots": 13,
+      "signs": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    }
+  ],
+  "negative_controls": [
+    {
+      "mutation": "wrong rate",
+      "rejected_by": "ODE residual identity"
+    },
+    {
+      "mutation": "wrong product",
+      "rejected_by": "ODE residual identity"
+    },
+    {
+      "mutation": "wrong eliminant",
+      "rejected_by": "ODE residual identity"
+    },
+    {
+      "mutation": "wrong reconstruction",
+      "rejected_by": "ODE residual identity"
+    },
+    {
+      "mutation": "insufficient geometric separation",
+      "rejected_by": "general exact alternating signs"
+    }
+  ],
+  "status": "EXACT_CHECKS_PASS",
+  "checks_executed": 472,
+  "python": "3.14.7",
+  "sympy": "1.14.0",
+  "universal_scope": "Theorem proved in paper.tex; finite checks do not establish all n."
+}

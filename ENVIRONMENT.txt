@@ -1,0 +1,6 @@
+Python 3.14.7
+SymPy 1.14.0
+Platform macOS-27.0.1-arm64-arm-64bit-Mach-O
+pdfTeX 1.40.29 (TeX Live 2026)
+Native desktop compiler: success. Exported PDF: 10 pages, all pages inspected; all fonts embedded.
+See receipts/pdf-qa.json for the retained minor typesetting diagnostic.

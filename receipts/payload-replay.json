@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0",
+  "status": "SCIENTIFIC_PAYLOAD_CHECKS_PASS",
+  "checkedAt": "2026-10-04T21:57:50.700715+00:00",
+  "scope": "Listed scientific inputs and recorded executions; not the final ZIP or every packaging file.",
+  "fileSha256": {
+    "paper.tex": "d3058105609a31fdf7dcf214a74da09498ec81b98fdb55408b059131e8a562b9",
+    "paper.pdf": "d2f4e4a92b145f4a13a50c5eaefea7f3e772ad94e4af7810cbe9fa6212e06a76",
+    "verify.py": "8faf75808ebe4eb8dd18c63ffd0c38ff644ec82af1f73c1477502ce9df94298c",
+    "classify_supports.py": "f0b0197cd25ba705a1aafe4b6eed7e44b640fc5a6e4d6657ef44afd1aeca6b31",
+    "examples.json": "c36638c8f13e18934095a1f04cb656f5df1e76c696e2f29b08b02ff8cb832d7c",
+    "requirements.txt": "25f9f1fb1988b230147a1d3092d34e09c069eb7a6c6d6df46b3973b9f2d36efc",
+    "supplement/final-stability-proof.md": "37ae2daf215234f99cf49639b793ff2ca84e25ce988e39bda02ef8e12be2700c",
+    "supplement/phillipson-rojas-bridge.md": "198a561c577cd43dfb3bab961f031968bdcf5c96e835337bd81cbb52857859e3",
+    "supplement/inflow-free-proof.md": "6edb07bac0bb82823fd593c2efa3d1fd1aa1606e1178d32eebf5edb9bf670395",
+    "supplement/general-proof.md": "0005132ac9e036512a9fe1b3eb8fe4d7a75eef05f9e1a5b6d4c757da6e7ae4c5",
+    "receipts/normal.json": "8c5f7be60808d69e0a3152b87642721184c8b19eec4fc78f7f17fe3b80066847",
+    "receipts/optimized.json": "8c5f7be60808d69e0a3152b87642721184c8b19eec4fc78f7f17fe3b80066847",
+    "receipts/source-supports.json": "78cc53b31e495be98e8ef64f69831f1982c0b360d545b2a944300bdc09e08293",
+    "receipts/pdf-qa.json": "7b691a96cd5778b54ae41419cfdbebc36e02d6ddbaef06d20ce5344f95d484dd",
+    "review/user-supplied/reviewer_independent_checks.py": "ac93a7a30599353eb69a8697f26b5ca7da60fb7ade46bb6fd63135663732986a",
+    "review/user-supplied/replayed-results.json": "9bb98b311d7fc37cdad168477bcf50403f9e8fb486bd26a330e70b5e5418f8f1"
+  },
+  "ordinaryAndOptimizedIdentical": true,
+  "exactChecks": 678,
+  "rejectedNegativeControls": 11,
+  "suppliedCheckerChecks": 1791,
+  "python": "3.14.7",
+  "sympy": "1.14.0",
+  "commands": [
+    "python3 verify.py --negative-controls",
+    "python3 -O verify.py --negative-controls",
+    "python3 classify_supports.py",
+    "python3 review/user-supplied/reviewer_independent_checks.py"
+  ],
+  "pdf": "receipts/pdf-qa.json",
+  "limitations": [
+    "Finite checks do not prove the universal quantifier.",
+    "Both symbolic implementations use SymPy.",
+    "Supplied checker authorship and external independence are not authenticated.",
+    "Final clean-extraction replay and ZIP identity belong to the external archive-replay.json."
+  ]
+}

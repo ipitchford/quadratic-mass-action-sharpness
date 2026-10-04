@@ -1,0 +1,488 @@
+{
+  "schemaVersion": "1.0",
+  "recordDate": "2026-10-04",
+  "recordType": "Prospective candidate research-gates record assembled from retained dated research evidence; no backdated searches.",
+  "candidateVersion": "v1.0.0-candidate",
+  "scientificStatus": "Unrefereed publication candidate with analytic proofs and exact computational corroboration.",
+  "legacyRecordPolicy": "The separate older outputs/RESEARCH_GATES.json is unchanged historical material and is not this package gate record.",
+  "readingBoundary": "sourcesReadInFull is the validator legacy field name. Each readWhat states the exact scope actually recorded, including partial full-text readings; the field does not assert every source was read cover to cover.",
+  "contributionMap": [
+    {
+      "claim": "An admissible quadratic (3,5,3) mass-action network attains exactly four distinct positive nondegenerate equilibria.",
+      "unit": "statement",
+      "paperLocation": "Abstract; Propositions prop:A and prop:B; Section 7",
+      "searches": [
+        {
+          "date": "2026-10-04",
+          "query": "\"three species\" \"five reactions\" \"four\" equilibria",
+          "corpus": "Web search, with primary-source follow-up; exact query retained in PRIOR_ART.md",
+          "evidenceLocator": "PRIOR_ART.md: Search query log"
+        },
+        {
+          "date": "2026-10-04",
+          "query": "\"quadratic\" \"four positive\" \"equilibria\" Banaji",
+          "corpus": "Web search, with primary-source follow-up; exact query retained in PRIOR_ART.md",
+          "evidenceLocator": "PRIOR_ART.md: Search query log"
+        }
+      ],
+      "closestPriorWork": "Banaji–Feliu (2026), Theorem 5.5 and Remark 5.8; Banaji–Boros–Hofbauer (2024), Remark 38 gives the planar precedent.",
+      "verdict": "new-in-bounded-search",
+      "qualification": "The recorded search found no matching chemical construction; this is not exhaustive historical-priority clearance."
+    },
+    {
+      "claim": "For every n>=2 an explicit quadratic (n,n+2,n) mass-action network has exactly n+1 positive equilibria, all nondegenerate; n>=3 answers the stated chemical sharpness question.",
+      "unit": "statement",
+      "paperLocation": "Proposition prop:PR; Theorem thm:main; Section 7",
+      "searches": [
+        {
+          "date": "2026-10-04",
+          "query": "\"(n,n+2,n)\" \"sharp\"",
+          "corpus": "Web search, with primary-source follow-up; exact query retained in PRIOR_ART.md",
+          "evidenceLocator": "PRIOR_ART.md: Search query log"
+        },
+        {
+          "date": "2026-10-04",
+          "query": "\"mass action\" \"sharpness\" \"all\" \"dimensions\"",
+          "corpus": "Web search, with primary-source follow-up; exact query retained in PRIOR_ART.md",
+          "evidenceLocator": "PRIOR_ART.md: Search query log"
+        },
+        {
+          "date": "2026-10-04",
+          "query": "\"mass action\" \"n+1\" \"Phillipson\"",
+          "corpus": "Web search, with primary-source follow-up; exact query retained in PRIOR_ART.md",
+          "evidenceLocator": "PRIOR_ART.md: Search query log"
+        }
+      ],
+      "closestPriorWork": "Phillipson–Rojas (2013), Theorem 1.6 supplies the polynomial family; Banaji–Feliu (2026), Remark 5.8 leaves chemical attainment for n>=3 open.",
+      "verdict": "partially-known-cited",
+      "qualification": "Only the admissible chemical realization and its consequence are contribution claims; the n=2 chemical attainment is already known."
+    },
+    {
+      "claim": "The direct epsilon=1/4 reaction construction is related exactly to the Phillipson–Rojas equations by coordinate reversal, positive equation scaling and invertible row differences, preserving positive equilibria and nonsingularity.",
+      "unit": "identification",
+      "paperLocation": "Proposition prop:PR and proof; supplement/phillipson-rojas-bridge.md",
+      "searches": [
+        {
+          "date": "2026-10-04",
+          "query": "\"Phillipson\" \"Rojas\" \"chemical\"",
+          "corpus": "Web search, with primary-source follow-up; exact query retained in PRIOR_ART.md",
+          "evidenceLocator": "PRIOR_ART.md: Search query log"
+        },
+        {
+          "date": "2026-10-04",
+          "query": "\"Fewnomial systems with many roots\" \"reaction network\"",
+          "corpus": "Web search, with primary-source follow-up; exact query retained in PRIOR_ART.md",
+          "evidenceLocator": "PRIOR_ART.md: Search query log"
+        },
+        {
+          "date": "2026-10-04",
+          "query": "\"240X\" \"15Y\" equilibria",
+          "corpus": "Web search, with primary-source follow-up; exact query retained in PRIOR_ART.md",
+          "evidenceLocator": "PRIOR_ART.md: Search query log"
+        }
+      ],
+      "closestPriorWork": "Phillipson–Rojas, Theorem 1.6 and proof; the source equations are prior work, and the exact reaction bridge is displayed in the present manuscript.",
+      "verdict": "partially-known-cited",
+      "qualification": "Equation equivalence is not dynamical equivalence and does not transfer stability."
+    },
+    {
+      "claim": "The all-dimensional maximal-root polynomial chain and alternating-product root mechanism are an antecedent of this manuscript, not newly discovered here.",
+      "unit": "object",
+      "paperLocation": "Introduction; Proposition prop:PR; Theorem thm:main attribution",
+      "searches": [
+        {
+          "date": "2026-10-04",
+          "query": "\"Phillipson\" \"Rojas\" \"Fewnomial systems with many roots\" arxiv",
+          "corpus": "Web search, with primary-source follow-up; exact query retained in PRIOR_ART.md",
+          "evidenceLocator": "PRIOR_ART.md: Search query log"
+        },
+        {
+          "date": "2026-10-04",
+          "query": "\"Maximally positive polynomial systems\" \"arxiv\"",
+          "corpus": "Web search, with primary-source follow-up; exact query retained in PRIOR_ART.md",
+          "evidenceLocator": "PRIOR_ART.md: Search query log"
+        }
+      ],
+      "closestPriorWork": "Phillipson–Rojas (2013), Theorem 1.6, Lemma 1.8 and proof, inspected arXiv:1011.4128v5.",
+      "verdict": "collision",
+      "resolution": "The abstract, introduction and named realization proposition prominently credit Phillipson–Rojas; novelty is restricted to admissible chemical realization and the stated chemical sharpness consequence."
+    },
+    {
+      "claim": "Scalar Gale reduction, circuit affine relations, partial-sum sign variation and positive-root counting are established methods.",
+      "unit": "method",
+      "paperLocation": "Introduction; Sections 3 and 6",
+      "searches": [
+        {
+          "date": "2026-10-04",
+          "query": "\"five monomials\" \"positive solutions\" circuit quadratic",
+          "corpus": "Web search, with primary-source follow-up; exact query retained in PRIOR_ART.md",
+          "evidenceLocator": "PRIOR_ART.md: Search query log"
+        },
+        {
+          "date": "2026-10-04",
+          "query": "\"Optimal Descartes\" circuits Bihan Forsgard 2021",
+          "corpus": "Web search, with primary-source follow-up; exact query retained in PRIOR_ART.md",
+          "evidenceLocator": "PRIOR_ART.md: Search query log"
+        },
+        {
+          "date": "2026-10-04",
+          "query": "\"Characterization of circuits\" \"maximal number\" positive solutions",
+          "corpus": "Web search, with primary-source follow-up; exact query retained in PRIOR_ART.md",
+          "evidenceLocator": "PRIOR_ART.md: Search query log"
+        }
+      ],
+      "closestPriorWork": "Bihan (2015), El Hilany (2017), Bihan–Dickenstein–Forsgård (2021), and Banaji–Feliu (2026).",
+      "verdict": "known-cited",
+      "qualification": "No novel general fewnomial or Gale-duality method is claimed."
+    },
+    {
+      "claim": "The fixed R=25 chain has a self-contained uniform alternating-sign proof, exact degree exhaustion, and an augmented-Jacobian proof of nondegeneracy.",
+      "unit": "proof",
+      "paperLocation": "Theorem thm:main and proof; supplement/general-proof.md",
+      "searches": [
+        {
+          "date": "2026-10-04",
+          "query": "\"quadratic\" \"Gale\" \"chain\" \"equilibria\"",
+          "corpus": "Web search, with primary-source follow-up; exact query retained in PRIOR_ART.md",
+          "evidenceLocator": "PRIOR_ART.md: Search query log"
+        },
+        {
+          "date": "2026-10-04",
+          "query": "\"Phillipson\" \"Rojas\" \"Fewnomial systems with many roots\" arxiv",
+          "corpus": "Web search, with primary-source follow-up; exact query retained in PRIOR_ART.md",
+          "evidenceLocator": "PRIOR_ART.md: Search query log"
+        }
+      ],
+      "closestPriorWork": "Phillipson–Rojas provides the same extremal algebraic family and alternating mechanism; the present proof gives a self-contained rational specialization and explicit chemical reconstruction.",
+      "verdict": "partially-known-cited",
+      "qualification": "The constant and exposition do not turn the inherited mechanism into a new abstract extremal theorem."
+    },
+    {
+      "claim": "The reciprocal family has an exact four-equilibrium interval; its N=7,K=145 member has two sinks and two index-one saddles. The inflow-free example has maximum product molecularity ten and exact inverse-rate interval 1568<L<117649/75.",
+      "unit": "object",
+      "paperLocation": "Propositions prop:A and prop:B; Corollaries cor:stability and cor:B-window",
+      "searches": [
+        {
+          "date": "2026-10-04",
+          "query": "\"42X\" \"6Z\" reaction equilibria",
+          "corpus": "Web search, with primary-source follow-up; exact query retained in PRIOR_ART.md",
+          "evidenceLocator": "PRIOR_ART.md: Search query log"
+        },
+        {
+          "date": "2026-10-04",
+          "query": "\"five-reaction\" \"four\" equilibria",
+          "corpus": "Web search, with primary-source follow-up; exact query retained in PRIOR_ART.md",
+          "evidenceLocator": "PRIOR_ART.md: Search query log"
+        },
+        {
+          "date": "2026-10-04",
+          "query": "\"reciprocal quartic\" \"positive roots\" chemical",
+          "corpus": "Web search, with primary-source follow-up; exact query retained in PRIOR_ART.md",
+          "evidenceLocator": "PRIOR_ART.md: Search query log"
+        }
+      ],
+      "closestPriorWork": "Banaji–Boros–Hofbauer (2024), Remark 38 is the nearest inspected small-network chemical precedent; reciprocal-polynomial algebra and Routh–Hurwitz are classical.",
+      "verdict": "partially-known-cited",
+      "qualification": "The recorded queries concern construction and reciprocal fingerprints; no separate exhaustive priority search for the inflow-free rate slice or local-bistability calculation was performed. These are exact properties of the displayed witnesses, not claims of new stability or quartic methods."
+    },
+    {
+      "claim": "The 12 degree-four five-source supports split into two species-permutation orbits of six; this is a source-support enumeration only.",
+      "unit": "object",
+      "paperLocation": "Section 6, two quartic source-support types",
+      "searches": [
+        {
+          "date": "2026-10-04",
+          "query": "\"Maximally positive polynomial systems supported on circuits\" quadratic",
+          "corpus": "Web search, with primary-source follow-up; exact query retained in PRIOR_ART.md",
+          "evidenceLocator": "PRIOR_ART.md: Search query log"
+        },
+        {
+          "date": "2026-10-04",
+          "query": "\"mass action\" \"X+Z\" \"Y+Z\" \"2Y\" \"equilibria\"",
+          "corpus": "Web search, with primary-source follow-up; exact query retained in PRIOR_ART.md",
+          "evidenceLocator": "PRIOR_ART.md: Search query log"
+        }
+      ],
+      "closestPriorWork": "Banaji–Feliu, Remarks 5.4(1) and 5.7, describes restrictive maximal-degree source configurations; the package supplies the exact three-species enumeration.",
+      "verdict": "partially-known-cited",
+      "qualification": "This does not classify all products, rates or reaction networks and is unnecessary for the existence proof."
+    },
+    {
+      "claim": "The reciprocal substitution and exact quartic fingerprint reduce the example to elementary positive-root calculations.",
+      "unit": "method",
+      "paperLocation": "Proposition prop:A proof",
+      "searches": [
+        {
+          "date": "2026-10-04",
+          "query": "\"reciprocal quartic\" \"positive roots\" chemical",
+          "corpus": "Web search, with primary-source follow-up; exact query retained in PRIOR_ART.md",
+          "evidenceLocator": "PRIOR_ART.md: Search query log"
+        },
+        {
+          "date": "2026-10-04",
+          "query": "\"(t+1)\" \"(t+49)\" \"145\" polynomial",
+          "corpus": "Web search, with primary-source follow-up; exact query retained in PRIOR_ART.md",
+          "evidenceLocator": "PRIOR_ART.md: Search query log"
+        },
+        {
+          "date": "2026-10-04",
+          "query": "\"2205\" \"2401\" \"568\" polynomial",
+          "corpus": "Web search, with primary-source follow-up; exact query retained in PRIOR_ART.md",
+          "evidenceLocator": "PRIOR_ART.md: Search query log"
+        }
+      ],
+      "closestPriorWork": "Classical reciprocal-polynomial algebra; Phillipson–Rojas also uses reciprocal relations and alternating signs.",
+      "verdict": "known-cited",
+      "qualification": "Exact fingerprint searches found no matching network, but reciprocal reduction is not a novelty claim."
+    }
+  ],
+  "sourcesReadInFull": [
+    {
+      "citation": "Banaji and Feliu (2026), DOI 10.1007/s00285-026-02429-8",
+      "usedFor": "Source-only quadratic definition, exact upper-bound hypotheses and the chemical attainment question.",
+      "readWhat": "Full HTML inspected, especially definitions, Theorem 5.5 and Remarks 5.4–5.8. No claim that a local source PDF was retained or hashed.",
+      "date": "2026-10-04",
+      "evidenceLocator": "https://link.springer.com/article/10.1007/s00285-026-02429-8 ; Theorem 5.5, Remark 5.8",
+      "readingRecord": "PRIOR_ART.md: Primary sources inspected; CITATION_AUDIT.md"
+    },
+    {
+      "citation": "Phillipson and Rojas (2013), DOI 10.1090/conm/605/12111; inspected arXiv:1011.4128v5 (2012-11-06)",
+      "usedFor": "Load-bearing antecedent for the named realization and accurate novelty scope.",
+      "readWhat": "Full-text Theorem 1.6 on p.3, its proof on p.14, and Lemma 1.8 on pp.3,14–15 inspected, including n>=2 and epsilon=1/4. The record identifies relevant sections read, not a claim of line-by-line reading of every page.",
+      "date": "2026-10-04",
+      "evidenceLocator": "https://arxiv.org/abs/1011.4128v5 ; Theorem 1.6, Lemma 1.8 and proof",
+      "readingRecord": "PRIOR_ART.md: Primary sources inspected; CITATION_AUDIT.md"
+    },
+    {
+      "citation": "Banaji, Boros and Hofbauer (2024), DOI 10.1007/s11071-024-10068-1; arXiv:2406.13451v1",
+      "usedFor": "Known planar attainment and the source caveat concerning rank-one/bimolecular statements.",
+      "readWhat": "Full HTML inspected around Theorems 12 and 18, Lemma 20 and Remark 38; the cited planar example was reconstructed independently.",
+      "date": "2026-10-04",
+      "evidenceLocator": "https://arxiv.org/html/2406.13451v1 ; Theorem 18, Lemma 20, Remark 38",
+      "readingRecord": "PRIOR_ART.md: Primary sources inspected; CITATION_AUDIT.md"
+    },
+    {
+      "citation": "El Hilany (2017), DOI 10.1007/s00454-017-9897-4; arXiv:1603.01813v1",
+      "usedFor": "Circuit-support characterization as methodological prior art, not chemical admissibility.",
+      "readWhat": "Theorem 1.1 in the 13-page preprint inspected for affine-relation inequalities and unrestricted real coefficient matrices; no assertion that the complete proof was independently audited.",
+      "date": "2026-10-04",
+      "evidenceLocator": "https://arxiv.org/abs/1603.01813v1 ; Theorem 1.1",
+      "readingRecord": "PRIOR_ART.md: Primary sources inspected; CITATION_AUDIT.md"
+    },
+    {
+      "citation": "Bihan, Dickenstein and Forsgård (2021), DOI 10.1007/s00208-021-02216-4; inspected arXiv:2010.09165v2 (2022-05-25)",
+      "usedFor": "Established optimal circuit Descartes method and grouping of collinear Gale rows.",
+      "readWhat": "Definitions 2.1–2.3 and Theorem 2.4 inspected in the 21-page preprint; exact sections rather than an unsupported whole-paper-read claim.",
+      "date": "2026-10-04",
+      "evidenceLocator": "https://arxiv.org/abs/2010.09165v2 ; Definitions 2.1–2.3, Theorem 2.4",
+      "readingRecord": "PRIOR_ART.md: Primary sources inspected; CITATION_AUDIT.md"
+    },
+    {
+      "citation": "Bihan (2015), DOI 10.1016/j.jsc.2014.09.003",
+      "usedFor": "Maximally positive circuit systems and backward citation chain to Phillipson–Rojas.",
+      "readWhat": "Abstract and available text of Sections 3.2–3.3 inspected. This is a partial full-text reading used for context, not a load-bearing proof dependency.",
+      "date": "2026-10-04",
+      "evidenceLocator": "https://www.sciencedirect.com/science/article/pii/S0747717114000716 ; abstract, Sections 3.2–3.3",
+      "readingRecord": "PRIOR_ART.md: Primary sources inspected; CITATION_AUDIT.md"
+    },
+    {
+      "citation": "Banaji (2026), arXiv:2609.07265v1 (2026-09-07)",
+      "usedFor": "Current author follow-up and scope of few-reaction fold/cusp restrictions.",
+      "readWhat": "Relevant full-text results, Proposition 33, its following discussion and closing discussion inspected; author publication list also checked. Not claimed to be a journal publication or a full independent proof audit.",
+      "date": "2026-10-04",
+      "evidenceLocator": "https://arxiv.org/html/2609.07265v1 ; Proposition 33 and closing discussion",
+      "readingRecord": "PRIOR_ART.md: Primary sources inspected; CITATION_AUDIT.md"
+    }
+  ],
+  "limitationTriage": [
+    {
+      "limitation": "The requested three-species existence question initially left attainment at four unresolved.",
+      "closingQuestion": "Can an exact admissible construction close the question?",
+      "triedOrSearched": "Two explicit reaction networks, exact converse reconstructions, four sign brackets, degree exhaustion and nonzero Jacobians; paper Propositions prop:A and prop:B.",
+      "estimatedCost": "Closed during this research; no further work estimated.",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "A single three-species example would not settle higher-dimensional attainment.",
+      "closingQuestion": "Can the construction extend uniformly without increasing the excess reaction count?",
+      "triedOrSearched": "The all-dimensional chain and exact Phillipson–Rojas realization prove n+1 equilibria for every n>=2; the antecedent was identified and credited.",
+      "estimatedCost": "Closed analytic extension.",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "An isolated rational rate witness would omit a tractable parameter characterization.",
+      "closingQuestion": "Can elementary differentiation determine the exact one-rate region?",
+      "triedOrSearched": "Corollary cor:B-window factors the derivative, computes both minima and the intervening maximum, and classifies boundary multiplicities.",
+      "estimatedCost": "Closed exact calculation.",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "Equilibrium counting alone would not establish stability of the reciprocal witness.",
+      "closingQuestion": "Can exact characteristic-polynomial inequalities classify the four N=7,K=145 equilibria?",
+      "triedOrSearched": "Corollary cor:stability proves two sinks and two index-one saddles by exact Routh–Hurwitz and sign calculations, retained in the extended verifier.",
+      "estimatedCost": "Closed exact local-stability extension.",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "Finite program instances cannot prove the universal n statement, and elimination alone need not prove original-system nondegeneracy.",
+      "closingQuestion": "Can a uniform proof and a nonsingular reconstruction block close these gaps?",
+      "triedOrSearched": "Uniform product bound and degree argument establish all n; the augmented-equation Schur complement proves nonsingularity of the original Jacobian.",
+      "estimatedCost": "Closed in Theorem thm:main and proof.",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "Chemical-admissibility and upper-bound hypotheses cannot be inferred from unrestricted polynomial coefficients.",
+      "closingQuestion": "Can products, rates, full stoichiometric rank, distinct sources, affine source rank and positive fluxes be proved exactly?",
+      "triedOrSearched": "Named realization proposition and flux section verify nonnegative integer products, positive rational rates, source-only degree two, ranks and dynamic nontriviality.",
+      "estimatedCost": "Closed by exact displayed formulas.",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "Maximum product molecularity ten is an upper bound, not a proven minimum; large general-dimensional inflows are not chemically economical.",
+      "closingQuestion": "Can a known lower bound or complete exact search exclude all smaller products or give an optimal all-dimensional realization?",
+      "triedOrSearched": "The two source-support orbits were classified and explicit product sizes checked; arbitrary products remain unbounded. No complete product/rate classification or molecularity lower bound was proved.",
+      "estimatedCost": "Unknown; substantial new structural proof or exhaustive parameter classification, not a <=2-hour check.",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "The present witnesses prove attainment, not optimal molecularity or economical realization.",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "Local bistability does not establish four stable attractors, global convergence, a basin decomposition, or absence of other attractors.",
+      "closingQuestion": "Can a global Lyapunov argument or additional dynamical theorem classify the whole positive phase space?",
+      "triedOrSearched": "Exact local Jacobian classification completed; equation equivalence was explicitly restricted to equilibria and nonsingularity. No global theorem or numerical simulation is substituted for such a proof.",
+      "estimatedCost": "Unknown; separate dynamical research beyond a cheap local algebra check.",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "The stated task concerns nondegenerate equilibrium counts. The global and four-attractor questions are different claims.",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "The exact inverse-rate interval is not a volume estimate or general robustness theorem in the full rate space.",
+      "closingQuestion": "Can a tractable full-parameter discriminant/domain analysis characterize multistationarity regions?",
+      "triedOrSearched": "The one-rate derivative and endpoint multiplicities were proved; its relative width is reported only for that slice. No full-parameter volume was computed.",
+      "estimatedCost": "Unknown; additional multi-parameter semialgebraic analysis expected to exceed two hours.",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "One narrow slice supplies no justified inference about the full rate space.",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "Mass-action admissibility does not establish experimental chemistry, thermodynamic detailed balance or conservativity.",
+      "closingQuestion": "Could an experimentally supported realization or a different structurally constrained network meet those additional conditions?",
+      "triedOrSearched": "Verified exact mass-action stoichiometry and full rank only; no experiment, detailed-balance model, or conservation-law realization was performed.",
+      "estimatedCost": "Separate modelling/experimental project; cost and feasibility not established.",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "Those physical constraints change the problem and cannot be inferred from positive roots or integer complexes.",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "No proof-assistant formalization or computer-algebra-engine-independent replay is supplied.",
+      "closingQuestion": "Would formalization or a separately implemented exact algebra engine close that assurance distinction?",
+      "triedOrSearched": "Analytic proof, extended 678-check verifier with 11 negative controls, optimized-mode replay, internal derivations, and a freshly replayed supplied 1791-check checker are available. The supplied checker also uses SymPy.",
+      "estimatedCost": "New formalization or separate-engine implementation; effort not established and not assumed <=2 hours.",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "Exact mathematical arguments and common-engine checks do not constitute formal proof or engine independence.",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "Internal agent audits and a supplied referee-style assessment do not authenticate independent human peer review or external reproduction.",
+      "closingQuestion": "Can authenticated external review be obtained or the supplied reviewer identity verified?",
+      "triedOrSearched": "Retained provenance distinguishes internal checks, user-supplied assessment and actual local replay; the review bundle was received and hashed, but reviewer identity remains unverified.",
+      "estimatedCost": "External participation and identity evidence required; duration not within task control.",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "A local agent cannot manufacture independent review or authenticate identity from a supplied report alone.",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "The literature search is bounded and cannot prove absolute historical priority, especially for chemical realization and witness-level stability.",
+      "closingQuestion": "Can broader citation databases, non-English coverage or author evidence establish a stronger priority claim?",
+      "triedOrSearched": "Dated exact queries and primary-source reading are retained in PRIOR_ART.md; the search found and resolved the Phillipson–Rojas collision. No MathSciNet/zbMATH/Scopus/WoS exhaustive export, author enquiry or non-English sweep is claimed.",
+      "estimatedCost": "Unknown; exhaustive priority cannot be closed by one <=2-hour search.",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "No first-ever claim is made; a bounded negative result is not a priority proof.",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "Not all inspected external source PDFs were retained with local checksums.",
+      "closingQuestion": "Can a new download establish exactly which historical bytes were inspected?",
+      "triedOrSearched": "Primary source versions and sections are recorded; a sandbox DNS failure prevented retention in the original audit. No false source-archive certificate is claimed.",
+      "estimatedCost": "A new download could be inexpensive, but cannot retroactively establish the originally inspected bytes.",
+      "cheap": true,
+      "decision": "OPEN",
+      "reasonOpen": "The record supports version/section attribution, not checksum identity of every source viewed.",
+      "whyNotClosedNow": "A new download would create a different archival evidence claim rather than close historical byte provenance; this is not a load-bearing mathematical gap."
+    },
+    {
+      "limitation": "The source-support enumeration is not a classification of all networks, products or rate choices.",
+      "closingQuestion": "Can the intended scope be made exact without pretending a finite support scan closes an infinite network problem?",
+      "triedOrSearched": "All 252 supports were enumerated; the manuscript gives the two quartic orbits and explicitly limits the result to source supports.",
+      "estimatedCost": "Closed scope clarification; a full network classification would be separate research.",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "The source rank-one remark has wording inconsistent with the cited bimolecular result, and the chemical planar attainment is not new.",
+      "closingQuestion": "Does either issue undermine the n>=2 theorem or novelty scope?",
+      "triedOrSearched": "The n=1 remark is not used; the elementary counterexample and BBH2024 distinction are recorded. Planar attainment is credited and the new sharpness discussion targets n>=3.",
+      "estimatedCost": "Closed for the stated theorem; correction of the external publication remains outside this record.",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": ""
+    }
+  ],
+  "extensionScout": {
+    "by": "Primary research agent and parallel analytic, construction, general-dimension and proof-audit agents; revision pass incorporated the user-supplied referee-style assessment.",
+    "date": "2026-10-04",
+    "status": "COMPLETED",
+    "proposals": [
+      "Extend the three-species construction to arbitrary n at fixed excess reaction count.",
+      "Derive an admissible realization of the identified prior polynomial family and correct attribution.",
+      "Give a second inflow-free support example and exact one-rate interval.",
+      "Classify local stability of the N=7,K=145 witness.",
+      "Expose both quartic-support types without claiming a network classification."
+    ],
+    "actions": [
+      "Completed named all-dimensional realization and a self-contained fixed-R=25 proof with positivity, exhaustiveness and nondegeneracy.",
+      "Completed formula-level Phillipson–Rojas identification; revised abstract and organizing proposition explicitly credit prior algebraic work.",
+      "Completed maximum-product-molecularity-ten witness and exact interval with boundary root multiplicities; promoted to the manuscript.",
+      "Completed exact two-sink/two-saddle corollary and distributed verifier checks.",
+      "Completed exact enumeration, a compact manuscript table and explicit classification limits."
+    ],
+    "scopeDecision": "Cheap tractable extensions were pursued to completion. Product optimality, full-rate robustness, global dynamics and physical realization remain separate open projects; no stronger result is inferred."
+  },
+  "verificationSnapshot": {
+    "mainVerifierChecks": 678,
+    "negativeControlsRejected": 11,
+    "suppliedCheckerChecks": 1791,
+    "suppliedCheckerBoundary": "Freshly replayed locally; user-supplied referee-style code, reviewer identity unverified, common SymPy backend; no original manuscript-archive input.",
+    "pdfPages": 10,
+    "pdfQA": "Native compilation and all-page visual inspection completed; see receipts/pdf-qa.json.",
+    "scope": "These quantities describe retained checks and do not prove universal quantifiers, historical priority, formal verification or external peer review."
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "version": "1.0.0-candidate",
+  "date": "2026-10-04",
+  "publication_status": "unrefereed publication candidate",
+  "authoritative_manuscript": [
+    "paper.pdf",
+    "paper.tex"
+  ],
+  "accessible_overview": "README.md",
+  "review_status": {
+    "kind": "user-provided AI/referee-style assessment",
+    "identity_verified": false,
+    "reported_external_execution_authenticated": false,
+    "journal_acceptance": false,
+    "official_REF_assessment": false,
+    "record": "REVIEW_RESPONSE.md"
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "statement": "There exists a quadratic three-species five-reaction rank-three mass-action network with exactly four distinct positive nondegenerate equilibria at positive rational rate constants.",
+      "mathematical_status": "proved in candidate manuscript; internally checked",
+      "release_status": "unrefereed publication candidate",
+      "evidence": [
+        "paper.tex",
+        "examples.json",
+        "verify.py"
+      ]
+    },
+    {
+      "id": "C2",
+      "statement": "For every integer n>=2, an explicit quadratic (n,n+2,n) mass-action network has exactly n+1 positive equilibria, all nondegenerate.",
+      "mathematical_status": "analytic proof in candidate manuscript",
+      "release_status": "unrefereed publication candidate",
+      "evidence": [
+        "paper.tex",
+        "supplement/general-proof.md"
+      ],
+      "finite_checks": "Supplementary only; dimensions and counts are recorded in executed receipts."
+    },
+    {
+      "id": "C3",
+      "statement": "The all-dimensional construction realizes an existing Phillipson-Rojas polynomial chain as a mass-action network with integer products and positive rational rates. Invertible equation operations preserve equilibria and Jacobian nonsingularity, not dynamics or stability.",
+      "mathematical_status": "exact identification with prior art",
+      "release_status": "unrefereed publication candidate",
+      "evidence": [
+        "paper.tex",
+        "supplement/phillipson-rojas-bridge.md",
+        "PRIOR_ART.md"
+      ]
+    },
+    {
+      "id": "C4",
+      "statement": "The inflow-free five-reaction example has maximum product molecularity ten and exactly four positive nondegenerate equilibria for fourth rate 1/K precisely when 1568<K<117649/75.",
+      "mathematical_status": "analytic proof in candidate manuscript and supplement",
+      "release_status": "unrefereed publication candidate",
+      "evidence": [
+        "paper.tex",
+        "supplement/inflow-free-proof.md",
+        "examples.json",
+        "verify.py"
+      ]
+    },
+    {
+      "id": "C5",
+      "statement": "For the reciprocal example N=7, K=145, the four equilibria ordered by scalar parameter are a saddle, sink, saddle, sink; each saddle has exactly one unstable direction.",
+      "mathematical_status": "exact local stability analysis",
+      "release_status": "unrefereed publication candidate",
+      "evidence": [
+        "paper.tex",
+        "review/independent-derivations.md",
+        "verify.py"
+      ]
+    }
+  ],
+  "not_claimed": [
+    "global minimal product molecularity",
+    "four stable attractors",
+    "global convergence or basin classification",
+    "full-parameter robustness volume",
+    "new abstract maximal-root polynomial family",
+    "exhaustive historical priority",
+    "authenticated external peer review",
+    "journal acceptance",
+    "official REF rating",
+    "public publication",
+    "experimental chemical realization"
+  ],
+  "manuscript_revision": 2,
+  "candidate_identifiers": {
+    "repository": "https://github.com/ipitchford/quadratic-mass-action-sharpness",
+    "tag": "v1.0.0-candidate",
+    "reserved_doi": "10.5281/zenodo.23146115",
+    "concept_doi": "10.5281/zenodo.23146114",
+    "availability": "reserved/planned identifiers; publication and canonical readback pending"
+  }
+}
